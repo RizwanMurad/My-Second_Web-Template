@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy - Education WordPress Theme</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://eduma.thimpress.com/demo-udemy/wp-content/uploads/sites/93/2015/10/favicon-32x32.png"
+        sizes="32x32">
+    <link rel="stylesheet" id="elementor-icons-thim-ekits-fonts-css"
+        href="https://eduma.thimpress.com/demo-udemy/wp-content/plugins/thim-elementor-kit/build/libraries/thim-ekits/css/thim-ekits-icons.min.css?ver=1.1.6.3"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="responsive.css">
+    
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Images/Udemy.webp" alt="">
+        </div>
+    <div class="menu-container">
+        <div class="abc">
+        <ul>
+            <li><a href="">Home</a></li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn"><span class="drp">Pages
+                <i class="fa fa-angle-down"></i></span>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Courses</a>
+                <a href="#">Membership</a>
+                <a href="#">Events</a>
+                <a href="#">Become a Teacher</a>
+                <a href="#">Shop</a>
+                <a href="#">Blog</a>
+                <a href="#">Gallery</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Portfolio 2</a>
+                <a href="#">FAQs</a>
+                <a href="#">Contact</a>
+                <a href="#">About Us</a>
+                <a href="#">Maintenance</a>
+                <a href="#">404 Page</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><span class="drp">Categories
+                <i class="fa fa-angle-down"></i></span>
+            </button>
+            <div class="dropdown-content two">
+                <a href="#">Business</a>
+                <a href="#">Health & Fitness</a>
+                <a href="#">IT & Software</a>
+                <a href="#">Lifestyle</a>
+                <a href="#">Marketing</a>
+                <a href="#">Personal Development</a>
+                <a href="#"> Photography & Video</a>
+            </div>
+        
+
+        </div>
+    </div>
+        <div class="search">
+
+            <input type="search" placeholder="Search...">
+            <button class="srchbtn"><i class="fa fa-search" id="b"></i></button>
+            <p class="btnp">Become a Teacher</p>
+            <button class="btn1">Login</button>
+
+        </div>
+</div>
+    </nav>
+    <div class="slideshow-container">
+        <div class="mySlides fade ">
+                
+                    <img src="Images/Slider/slide-udume-new-1-1.jpg" alt="" width="100%" >
+                    <div class="text">
+                    <h3>Build Online Course Website</h3>
+                    <h1>Get The Best <br> LMS WordPress Theme</h1>
+                    <button class="btn2">GET STARED</button>
+                    </div>
+                
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/Slider/slide-udume-new-2-1.jpg" alt=""  width="100%">
+                    <div class="text">
+                    <h3>Build Online Course Website</h3>
+                    <h1>Get The Best <br> LMS WordPress Theme</h1>
+                    <button class="btn2">GET STARED</button>
+                    </div>
+        </div>
+        <div class="mySlides fade">
+            <img src="Images/Slider/slide-udume-new-4-1.jpg" alt=""  width="100%">
+                    <div class="text">
+                    <h3>Build Online Course Website</h3>
+                    <h1>Get The Best <br> LMS WordPress Theme</h1>
+                    <button class="btn2">GET STARED</button>
+                    </div>
+        </div>
+
+        <div class="dot-container" >
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+   
+   <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+    </script>
+
+    <div class="services">
+        <div class="srvc s1">
+            <i aria-hidden="true" class="tk tk-certificate2"></i>
+            <p><span style="font-size:21px;">100,000 online courses</span> <br> Explore a variety of fresh topics</p>
+        </div>
+        <div class="srvc s2">
+            <i aria-hidden="true" class="tk tk-man"></i>
+            <p><span style="font-size:21px;">Expert instruction</span> <br> Find the right instructor for you</p>
+        </div>
+        <div class="srvc s3">
+            <i aria-hidden="true" class="tk tk-alarm"></i>
+            <p><span style="font-size:21px;">Lifetime access</span> <br> Learn on your schedule</p>
+        </div>
+    </div>
+    <div class="content2">
+        <div class="popular-courses">
+            <p class="pop"><span  style="font-size: xx-large;font-weight: bold;">Popular Courses</span> <br> <span class="all"
+                    style="color: rgb(148, 146, 146);"> All Eduma, All the time</span>
+            </p>
+            <ul>
+                <li><a class="active" href="#">Business</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Health & Fitness</a></li>
+                <li><a href="#">IT & Software</a></li>
+            </ul>
+        </div>
+        <div class="courses">
+            <div class="course one">
+                <img src="Images/courseimage1.jpg" alt="">
+                <div class="roundimage-container">
+                    <img class="round" src="Images/round image.jpeg" alt="">
+                    <h5>Keny White</h5>
+                    <h4>Financial Accounting</h4>
+                    <hr>
+                    <div class="data first">
+                        <i aria-hidden="true" class="tk tk-file-invoice"><span class="g">0</span></i>
+                        <i aria-hidden="true" class="tk tk-students-friend"><span class="g">7</span></i>
+                        <p>$39.00</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="course two">
+                <img src="Images/courseimage2.jpg" alt="">
+                <div class="roundimage-container">
+                    <img src="Images/round image.jpeg" alt="">
+                    <h5>Keny White</h5>
+                    <h4>Economics for Managers</h4>
+                    <hr>
+                    <div class="data second">
+                        <i aria-hidden="true" class="tk tk-file-invoice"><span class="g">0</span></i>
+                        <i aria-hidden="true" class="tk tk-students-friend"><span class="g">26</span></i>
+                        <p>$94.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="course three">
+                <img src="Images/courseimage3.jpg" alt="">
+                <div class="roundimage-container">
+                    <img src="Images/round image.jpeg" alt="">
+                    <h5>Keny White</h5>
+                    <h4>Apply Fundamental Data Analysis <br> to Real Business Problems</h4>
+                    <hr>
+                    <div class="data third">
+                        <i aria-hidden="true" class="tk tk-file-invoice"><span class="g">0</span></i>
+                        <i aria-hidden="true" class="tk tk-students-friend"><span class="g">15</span></i>
+                        <p>$99.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="course four">
+                <img src="Images/courseimage4.jpg" alt="">
+                <div class="roundimage-container">
+                    <img src="Images/round image.jpeg" alt="">
+                    <h5>Keny White</h5>
+                    <h4>Master of Business Administration</h4>
+                    <hr>
+                    <div class="data fourth">
+                        <i aria-hidden="true" class="tk tk-file-invoice"><span class="g">0</span></i>
+                        <i aria-hidden="true" class="tk tk-students-friend"><span class="g">118</span></i>
+                        <p><span style="color: rgb(49, 206, 49);">Free</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content3">
+        <img src="Images/image5.png" alt="">
+        <p><span style="font-weight: bold;font-size: 20px;">Limitless learning, more possibilities </span> <br>
+            <span style="font-size: 19px;"> Answer a few questions for your top picks</span>
+        </p>
+        <button class="btn3"><a href="#">JOIN FOR FREE</a></button>
+    </div>
+    <div class="content4">
+        
+        <h1>Top <br>Categories</h1>
+        <div class="responsive-categories">
+        <div class="category first">
+            <a href="#"><img src="Images/image7.webp" alt=""><span class="k">Business</span></a>
+            <a href="#"><img src="Images/image10.webp" alt=""><span class="k">IT & Software</span></a>
+        </div>
+        <div class="category second">
+            <a href=""><img src="Images/image8.webp" alt=""><span class="k">Design</span></a>
+            <a href=""><img src="Images/image11.webp" alt=""><span class="k">Lifestyle</span></a>
+        </div>
+        <div class="category third">
+            <a href=""><img src="Images/image9.webp" alt=""><span class="k">Health & Fitness</span></a>
+            <a href=""><img src="Images/image12.webp" alt=""><span class="k">Marketing</span></a>
+        </div>
+    </div>
+    </div>
+    <div class="content5">
+        <h1>New Courses</h1>
+        <p class="cnt5p">Learn new skills, pursue your interests or advance your career with our short online courses
+        </p>
+        <div class="courses">
+            <div class="course one">
+                <img src="Images/image14.jpg" alt="">
+                <div class="roundimage-container">
+                    <img class="round" src="Images/round image.jpeg" alt="">
+                    <h5>Keny White</h5>
+                    <h4>Introduction LearnPress – LMS <br> plugin</h4>
+                    <hr>
+                    <div class="data first">
+                        <i aria-hidden="true" class="tk tk-file-invoice"><span class="g">0</span></i>
+                        <i aria-hidden="true" class="tk tk-students-friend"><span class="g">7</span></i>
+                        <p>$39.00</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="course two">
+                <img src="Images/image15.jpg" alt="">
+                <div class="roundimage-container">
+                    <img src="Images/round image.jpeg" alt="">
+                    <h5>Keny White</h5>
+                    <h4>Introduction to Marketing</h4>
+                    <hr>
+                    <div class="data second">
+                        <i aria-hidden="true" class="tk tk-file-invoice"><span class="g">0</span></i>
+                        <i aria-hidden="true" class="tk tk-students-friend"><span class="g">26</span></i>
+                        <p>$94.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="course three">
+                <img src="Images/image16.jpg" alt="">
+                <div class="roundimage-container">
+                    <img src="Images/round image.jpeg" alt="">
+                    <h5>Keny White</h5>
+                    <h4>Introduction to Adobe Photoshop</h4>
+                    <hr>
+                    <div class="data third">
+                        <i aria-hidden="true" class="tk tk-file-invoice"><span class="g">0</span></i>
+                        <i aria-hidden="true" class="tk tk-students-friend"><span class="g">15</span></i>
+                        <p>$99.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="course four">
+                <img src="Images/courseimage4.jpg" alt="">
+                <div class="roundimage-container">
+                    <img src="Images/round image.jpeg" alt="">
+                    <h5>Keny White</h5>
+                    <h4>Master of Business Administration</h4>
+                    <hr>
+                    <div class="data fourth">
+                        <i aria-hidden="true" class="tk tk-file-invoice"><span class="g">0</span></i>
+                        <i aria-hidden="true" class="tk tk-students-friend"><span class="g">118</span></i>
+                        <p><span style="color: rgb(49, 206, 49);">Free</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content6">
+        <h2>Explore Certificates</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="certificates-container">
+            <div class="certificate">
+                <img src="Images/certificate1.webp" alt="">
+                <h4>Certificate of Training</h4>
+            </div>
+            <div class="certificate">
+                <img src="Images/certificate2.webp" alt="">
+                <h4>Course Completion</h4>
+            </div>
+            <div class="certificate">
+                <img src="Images/certificate3.webp" alt="">
+                <h4>Digital Marketing</h4>
+            </div>
+            <div class="certificate">
+                <img src="Images/certificate4.webp" alt="">
+                <h4>Data Analytics</h4>
+            </div>
+        </div>
+    </div>
+    <div class="content7">
+        <div class="Events-container">
+            <h1>Events</h1>
+            <div class="events">
+                <div class="evnt">
+                    <div class="celender">
+                        <h2>23</h2>
+                        <p>Dec</p>
+                    </div>
+                    <p class="ep"><span style="font-size: 19px;">Learn to Write Flash Fiction</span> <br>
+                        <span style="font-size: 14px;color: gray;"><span style="padding-right: 6px;"><i
+                                    class="tk tk-clock"></i></span>12:00 am - 5:00 pm <span
+                                style="padding-right: 5px;padding-left: 18px;"><i
+                                    class="tk tk-map-marker"></i></span>Birmingham, UK
+                    </p></span>
+
+
+                </div>
+                <hr>
+                <div class="evnt">
+                    <div class="celender">
+                        <h2>15</h2>
+                        <p>Oct</p>
+                    </div>
+                    <p class="ep"><span style="font-size: 19px;">Eduma Autumn 2022</span> <br>
+                        <span style="font-size: 14px;color: gray;"><span style="padding-right: 6px;"><i
+                                    class="tk tk-clock"></i></span>8:00 am - 5:00 pm<span
+                                style="padding-right: 5px;padding-left: 18px;"><i
+                                    class="tk tk-map-marker"></i></span>Venice, Italy
+                    </p></span>
+                </div>
+                <hr>
+                <div class="evnt">
+                    <div class="celender">
+                        <h2>30</h2>
+                        <p>Sep</p>
+                    </div>
+                    <p class="ep"><span style="font-size: 19px;">Summer School 2022</span> <br>
+                        <span style="font-size: 14px;color: gray;"><span style="padding-right: 6px;"><i
+                                    class="tk tk-clock"></i></span>8:00 am - 5:00 pm <span
+                                style="padding-right: 5px;padding-left: 18px;"><i class="tk tk-map-marker"></i></span>
+                            NewYork, USA
+                    </p></span>
+                </div>
+                <hr>
+                <div class="evnt">
+                    <div class="celender last">
+                        <h2>23</h2>
+                        <p>Dec</p>
+                    </div>
+                    <p class="ep"><span style="font-size: 19px;">Build Education Website Using <br> WordPress</span>
+                        <br>
+                        <span style="font-size: 14px;color: gray;"><span style="padding-right: 6px;"><i
+                                    class="tk tk-clock"></i></span>8:00 am - 5:00 pm <span
+                                style="padding-right: 5px;padding-left: 18px;"><i
+                                    class="tk tk-map-marker"></i></span>Chicago, US
+                    </p></span>
+                </div>
+            </div>
+        </div>
+        <div class="Testimonials">
+            <h1>Our Testimonials</h1>
+            <div class="code-quality">
+                <div class="material">
+                    <h3>Code quality</h3>
+                    <p class="mp1" style="font-size: 17px;">Education WP Theme is a comprehensive LMS solution for WordPress Theme.
+                        This <br> beautiful theme based on LearnPress - the best WordPress LMS plugin. Education <br> WP
+                        theme will bring you the best LMS experience ever with super friendly UX and <br> complete
+                        eLearning features.
+
+                    </p>
+                    <div class="image-container">
+                        <img src="Images/image17.webp" alt="">
+                        <p class="mp2"><span style="font-size:20px;">Robert Prickett</span><br>
+                            <span style="font-size: 17px;color: rgb(156, 155, 155);"> Director biography</span>
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="37" viewBox="0 0 45 37" fill="none">
+                            <path
+                                d="M20 21.3543V0H0V37H3.55556L20 21.3543ZM2.96296 2.96H17.037V20.0857L2.96296 33.4762V2.96Z"
+                                fill="#FFB606"></path>
+                            <path d="M25 37H28.5556L45 21.3543V0H25V37ZM27.963 2.96H42.037V20.0857L27.963 33.4762V2.96Z"
+                                fill="#FFB606"></path>
+                        </svg>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="pagination">
+                <i aria-hidden="true" class="tk tk-angle-left"></i>
+                <i aria-hidden="true" class="tk tk-angle-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="education">
+        <div class="uni-images">
+            <img src="Images/image18.webp" alt="">
+            <img src="Images/image 19.webp" alt="">
+            <img src="Images/image 20.webp" alt="">
+            <img src="Images/image21.webp" alt="">
+            <img class="uni" src="Images/image22.webp" alt="">
+        </div>
+    </div>
+    <div class="content8">
+        <div class="imgp-container">
+            <P>Subscribe now and receive weekly newsletter with educational <br>materials, new courses, interesting
+                posts, popular books and much <br>more!</P>
+        </div>
+        <div class="email">
+            <input type="email" placeholder="Your email">
+            <button>SUBSCRIBE</button>
+        </div>
+    </div>
+    <div class="content9">
+        <div class="footer">
+            <div class="ftr f1">
+                <img src="Images/image25.webp" alt="">
+                <li><a href=""><i aria-hidden="true" class="tk tk-phone"></i> (04) 495-9400 1-800-544-2787</a></li>
+                <li><i aria-hidden="true" class="tk tk-map-marker"></i><span style="color: #848e99;">A24BT5 Building
+                        London, England</span></li>
+                <li><a href=""><i aria-hidden="true" class="tk tk-envelope"></i> contact@thimpress.com</a></li>
+                <li><i aria-hidden="true" class="tk tk-clock"></i> <span style="color: #848e99;">Daily: 10:00 Am - 5:00
+                        Pm Monday & Holiday: Closed</span></li>
+
+
+            </div>
+            <div class="ftr f2">
+                <h2>Menu</h2>
+                <li><a href="">Classes</a></li>
+                <li><a href="">Programs</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Contact</a></li>
+            </div>
+            <div class="ftr f3">
+                <h2>Courses</h2>
+                <li><a href="">Painting</a></li>
+                <li><a href="">Sketch</a></li>
+                <li><a href="">Drawing</a></li>
+                <li><a href="">Sculpture</a></li>
+                <li><a href="">Digital</a></li>
+            </div>
+            <div class="ftr f4">
+                <h2>Topics</h2>
+                <li><a href="">Accreditation</a></li>
+                <li><a href="">Disclosures</a></li>
+                <li><a href="">Student Code</a></li>
+                <li><a href="">Job Opportunities</a></li>
+                <li><a href="">Campus Safety</a></li>
+            </div>
+            <div class="ftr f5">
+                <h2>Info For</h2>
+                <li><a href="">Prospective Student</a></li>
+                <li><a href="">Parents & Families</a></li>
+                <li><a href="">Transfer Students</a></li>
+                <li><a href="">Industry Leader</a></li>
+                <li><a href="">Military Student</a></li>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <div class="footerP">
+                <a href="">Premium LMS & Online Education WordPress Theme</a>
+            </div>
+            <div class="location-arrow">
+                <i aria-hidden="true" class="tk tk-location-arrow"></i>
+            </div>
+            <div class="links">
+
+                <i aria-hidden="true" class="tk tk-face"></i>
+                <i aria-hidden="true" class="tk tk-twitter"></i>
+                <i aria-hidden="true" class="tk tk-instagram"></i>
+                <i aria-hidden="true" class="tk tk-pinterest-p"></i>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
